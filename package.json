@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "JWT_SECRET=7e04da88cbb8cc933c7b89fbfe121cca ts-node-dev --transpile-only --ignore-watch node_modules --respawn ./src/server.ts",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli",
-    "test": "NODE_ENV=test JWT_SECRET=7e04da88cbb8cc933c7b89fbfe121cca jest --maxWorkers=4"
+    "test": "NODE_ENV=test JWT_SECRET=7e04da88cbb8cc933c7b89fbfe121cca jest --maxWorkers=4 --detectOpenHandles"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
